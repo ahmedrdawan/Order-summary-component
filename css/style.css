@@ -1,0 +1,155 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body {
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.cointener {
+    height: 100vh;
+    background-image: url(../order-summary-component-main/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--Pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 450px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 6px 0 var(--Desaturated-blue);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card img {
+    max-width:100%;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+.card h1 {
+    color: var(--Dark-blue);
+    margin: 25px 0 15px;
+}
+
+.card p {
+    color: var(--Desaturated-blue);
+    margin-bottom: 15px;
+    width: 280px;
+}
+.card .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--Very-pale-blue);
+    margin-bottom: 15px;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card .details .icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.card .details .icons .info h3 {
+    color: var(--Dark-blue);
+    margin-bottom: 5px;
+}
+.card .details .icons .info span {
+    color: var(--Desaturated-blue);
+}
+
+.card .details > a {
+    color: var(--Bright-blue);
+    font-weight: 800;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.card .details > a:hover {
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+
+.card a {
+    text-decoration: none;
+}
+.card > a {
+    display: inline-block;
+    color: white;
+    background: var(--Bright-blue);
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 13px 30px;
+    box-shadow: 0 0 15px 0 var(--Desaturated-blue);
+    width: 70%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.card > a:hover {
+    background: var(--Desaturated-blue);
+}
+
+.card footer > a {
+    display: inline-block;
+    margin-bottom: 35px;
+    color: var(--Bright-blue);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.card footer > a:hover {
+    color: var(--Dark-blue);
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 330px;
+    }
+    .card .details,
+    .card > a {
+        width: 90%;
+    }
+}
